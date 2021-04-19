@@ -26,6 +26,7 @@ export default function reducer(
       }
       case APP_SUCCESS: {
         draft.loading = false
+        draft.data.items = action.payload.data
         break
       }
       case APP_FAILURE: {
@@ -50,7 +51,7 @@ export const searchAction = (query: string) => async (
   try {
     // const payload = await ServiceName(query)
 
-    dispatch(appSuccess([]))
+    dispatch(appSuccess({ data: [1,2,3] }))
   } catch {
     dispatch(appFailure())
   }

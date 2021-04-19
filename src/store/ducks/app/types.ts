@@ -1,5 +1,5 @@
 export type AppType = {
-  readonly items: string[]
+  readonly items: any[]
 }
 
 export type AppActionResult = {
