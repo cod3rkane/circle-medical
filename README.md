@@ -27,3 +27,9 @@ Launches the production build app.
 ```
 
 # The App:
+
+TODO:
+intl
+redux
+redux-devtools-extension
+next-redux-wrapper
